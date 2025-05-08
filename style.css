@@ -1,0 +1,61 @@
+body{
+    background-image: url(bg4.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    color: white;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+form{
+    backdrop-filter: blur(40px);
+    background-color: rgba(255, 255, 255, 0.252);
+    width: 500px;
+    padding: 20px 50px;
+    position: absolute;
+    left: 30%;
+    top: 20%;
+    border-radius: 20px;
+}
+
+input{
+    border: none;
+    border-bottom: 1px solid rgba(12, 12, 12, 0.273);
+    background-color: transparent;
+    color: black;
+    width: 100%;
+    margin-top: 60px;
+    font-size: 18px;
+    padding: 10px;
+}
+
+button, .btn{
+    
+    background-color: black;
+    color: white;
+    border: none;
+    width: 30%;
+    display: block;
+    margin: auto;
+    height: 50px;
+    margin-top: 50px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: white;
+    color: black;
+    transition: .3s;
+}
+
+h1{
+    color: black;
+}
+
+h5{
+    font-weight: 400;
+    font-size: 18px;
+}

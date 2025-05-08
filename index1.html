@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+ 
+
+    <style>
+        body{
+            background: green;
+        }
+        
+        h1{
+        text-align: center;
+        }
+        form{
+            position: absolute;
+            top:20%;
+            left:30%;
+            background: white;
+            padding : 20px;
+        }
+        
+        input{
+            margin-top: 30px;
+        }
+        
+        .btn{
+            background: blue;
+            color: white;
+           padding: 10px;
+           width: 100%;
+        }
+
+        .btn:hover{
+            background-color: black;
+            color: white;
+        }
+        
+        span{
+        color: red;
+        
+        }
+
+        input{
+            cursor: pointer;
+        }
+        
+        </style>
+
+
+
+<form onsubmit="return check()" autocomplete="off">
+    <h1>Javascript Validation Register</h1>
+    <p>Please fill in this form to create an account.</p>
+    <hr>
+
+    <label for="Name"><b>Name <span>**<span></b></label>
+    <input type="name" id="name" >
+     <br>
+            
+    <label for="Father"><b>Father </b></label>
+    <input />
+     <br>
+    <label for="Mother"><b>Mother</b></label>
+    <input />
+     <br>
+    <label for="Mobile"><b>Mobile <span>**<span></b></label>
+    <input type="number" id="mobile">
+      <br>
+<tr>
+<td > 
+<input type="submit" value="signup" class="btn"></td>
+</tr>
+</form>
+
+
+
+
+    <script>
+    function check()
+    {
+    var name=document.getElementById("name").value;
+    var mo=document.getElementById("mobile").value;
+    var x=document.getElementsByTagName("input");
+    if(name == "")
+    {
+    alert("Please Fill the name");
+    return false;
+    }
+    
+    else if(mo=="")
+    {
+    alert("Please Fill the mobile");
+    return false;
+    }
+    else{
+        alert("form success");
+    }
+    }
+    </script>
+</body>
+</html>
